@@ -1,0 +1,38 @@
+class Travel:
+    def passengers(self):
+        self.passengers = 3
+        print(self.passengers)
+    def distance(self):
+        self.distance = 10
+        print(self.distance)
+    def transport(self):
+        self.transport = 'bus'
+        print(self.transport)
+class Train(Travel):
+    def transport(self):
+        self.transport = 'train'
+        print(self.transport)
+    def cost(self):
+        self.cost = self.passengers*60
+        print(self.cost)
+class Bus(Travel):
+    def transport(self):
+        self.transport = 'bus'
+        print(self.transport)
+    def cost(self):
+        self.cost = self.passengers*100
+        print(self.cost)
+F1 = Travel()
+F1.passengers()
+F1.distance()
+F1.transport()
+F2 = Train()
+F2.passengers()
+F2.distance()
+F2.transport()
+F2.cost()
+F3 = Bus()
+F3.passengers()
+F3.distance()
+F3.transport()
+F3.cost()

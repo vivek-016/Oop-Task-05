@@ -1,0 +1,10 @@
+class Car:
+    def __init__(self,model):
+        self.model = model
+c1=Car(5634)
+c2=Car(3427)
+temp = c1.model
+c1.model = c2.model
+c2.model = temp
+print(c1.model)
+print(c2.model)

@@ -1,0 +1,30 @@
+class Shape:
+    def area(self):
+        print("the area covered by the shape")
+class Circle(Shape):
+    def __init__(self,radius):
+        self.radius = radius
+    def area(self):
+        area = (22/7)*self.radius*self.radius
+        print(area)
+class Square(Shape):
+    def __init__(self,side):
+        self.side = side
+    def area(self):
+        area = self.side*self.side
+        print(area)
+class Rectangle(Shape):
+    def __init__(self,length,width):
+        self.length = length
+        self.width = width
+    def area(self):
+        area = self.length*self.width
+        print(area)
+O1 = Shape()
+O1.area()
+O2 = Circle(5)
+O2.area()
+O3 = Square(5)
+O3.area()
+O4 = Rectangle(5,10)
+O4.area()
